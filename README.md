@@ -1,68 +1,40 @@
 # AlmaGlobal
 
-**Trustless Health. Eternal Records. Global Access.**
+## Description
 
-AlmaGlobal is a Web3 application offering **decentralized health insurance**, **eternal medical records on blockchain**, and a **global health passport** accessible anywhere in the world. All with seamless UX, no KYC, no intermediaries, and full user sovereignty over their data.
-
----
+AlmaGlobal is a decentralized health insurance platform that leverages blockchain technology to provide transparent, accessible, and efficient healthcare coverage. Built on the principles of decentralization and user sovereignty, AlmaGlobal eliminates traditional insurance intermediaries while maintaining robust security and compliance standards.
 
 ## MVP Goal
 
-A functional UI/frontend where users can access decentralized healthcare by subscribing to a **$30/month, no-KYC, 100% non-catastrophic event insurance**. Cancer/deadly diseases are not covered. Any event worldwide under $5000 at a hospital/healthcare provider can be refunded through this competitive, pseudonymous, and self-custodial health insurance and personal medical record provider.
+The MVP focuses on building a functional UI/frontend that demonstrates the core user experience for decentralized health insurance. This includes user authentication, document upload capabilities, and instant refund processing for medical expenses, all while maintaining a frictionless user experience.
 
----
+## Business Model
+
+**AlmaGlobal Basic Plan:** lets
+
+- **Premium**: $30/month
+- **Coverage**: Up to $5,000 per incident
+- **Scope**: 100% non-catastrophic event insurance
+- **Requirements**: No KYC required
+- **Processing**: Instant claims under $1,000
+
+**AlmaGlobal Plus Plan:**
+
+- **Premium**: $890/month
+- **Coverage**: Unlimited coverage for all events
+- **Scope**: Comprehensive including catastrophic illnesses
+- **Processing**: Instant claims under $10,000
+- **Support**: Priority processing and support
 
 ## Key Features
 
-### Passkey Wallet Creation with 2FA Security
-
-- Passwordless authentication with **passkeys + biometrics/2FA**
-- Self-custodial wallet on user's device
-- Onboarding in under 5 minutes
-
-### Decentralized Health Data Storage
-
-- Medical records on blockchain + encrypted storage on IPFS/Arweave
-- User owns their keys and data
-- Compatible with PDFs, images, and structured data
-
-### Global Health Passport
-
-- Consolidated medical records in a **digital passport**
-- Globally accessible via **QR code or wallet**
-- Sharing under user consent
-
-### Trustless Insurance Integration
-
-- Marketplace for decentralized insurance
-- Premiums and claims managed by **smart contracts**
-- Instant payments in stablecoins
-
-### Multi-Language & Accessibility
-
-- Spanish + regional dialects
-- Accessibility: screen readers, high contrast mode, adjustable typography
-- Works offline in low-connectivity areas
-
-### Interoperability with Healthcare Providers
-
-- APIs for laboratories, clinics, and doctors
-- **Soulbound tokens** to validate record authenticity
-- MVP admin for dispute resolution
-
-### Health Insights & Personalization
-
-- Preventive recommendations with **on-device analysis**
-- Health metrics dashboard + exportable reports
-- Gamified nudges for checkups and healthy habits
-
-### Cross-Platform Availability
-
-- iOS, Android, and Web (PWA)
-- Optimized for low-bandwidth environments
-- App <100MB for low-end devices
-
----
+- **Decentralized Architecture**: Built on blockchain for transparency and immutability
+- **Instant Claims Processing**: AI-powered document analysis for rapid reimbursement
+- **Global Coverage**: Worldwide healthcare provider network
+- **Self-Custodial Records**: Users maintain full control of their health data
+- **Mobile-First Design**: Responsive interface optimized for all devices
+- **Secure Authentication**: Multi-factor authentication with biometric support
+- **Real-Time Updates**: Live status tracking for claims and coverage
 
 ## Technical Stack
 
@@ -70,104 +42,46 @@ A functional UI/frontend where users can access decentralized healthcare by subs
 
 - **Framework**: Next.js 14 with React 18
 - **Language**: TypeScript
-- **Styling**: Tailwind CSS
+- **Styling**: Tailwind CSS with Radix UI components
 - **State Management**: Zustand/Redux Toolkit
-- **Web3**: ethers.js, wagmi, viem
+- **Authentication**: Passkeys + biometrics/2FA
 
-### Backend & Storage
+### Backend
 
-- **API**: Next.js API routes
-- **Decentralized Storage**: IPFS + Arweave
-- **Local Storage**: IndexedDB for offline functionality
-- **Encryption**: AES-256 for data security
+- **Runtime**: Next.js API routes
+- **Database**: PostgreSQL with Prisma ORM
+- **Caching**: Redis for session management
+- **File Storage**: IPFS/Arweave for document storage
 
 ### Blockchain
 
-- **Network**: Ethereum/Polygon
-- **Smart Contracts**: Solidity
-- **Development**: Hardhat, Foundry
-- **Testing**: Chai, Mocha
+- **Network**: LISK
+- **Smart Contracts**: Solidity with Hardhat
+- **Wallet Integration**: MetaMask, WalletConnect
+- **Token Standards**: ERC-20, ERC-721 for health records
 
 ### Authentication & Security
 
-- **Web3 Wallets**: MetaMask, WalletConnect
-- **Passkeys**: WebAuthn API
-- **2FA**: TOTP implementation
-- **Security**: Rate limiting, input validation
+- **Identity**: Self-custodial wallets
+- **Encryption**: End-to-end encryption for health data
+- **Compliance**: HIPAA-compliant data handling
+- **Audit**: Regular security audits and penetration testing
+
+### Development
+
+- **LISC L2**: Native integration with LISC Layer 2 network
+- **Smart Contracts**: Deployed on LISC L2 for optimal performance
+- **Testing**: Comprehensive testing suite with Foundry
+- **Monitoring**: Real-time blockchain monitoring and analytics
 
 ### Deployment & Infrastructure
 
-- **Frontend**: Vercel
-- **IPFS Pinning**: Pinata, Infura
-- **Monitoring**: Sentry, Vercel Analytics
-- **CI/CD**: GitHub Actions
-
----
-
-## MVP Scope & Insurance Details
-
-### Insurance Coverage
-
-- **Monthly Premium**: $30 USD
-- **Coverage Limit**: $5,000 per claim
-- **Coverage Type**: Non-catastrophic events only
-- **Exclusions**: Cancer, deadly diseases, pre-existing conditions
-- **Global Coverage**: Any healthcare provider worldwide
-- **No KYC Required**: Pseudonymous and privacy-focused
-
-### User Experience
-
-- **Self-Custodial**: Users control their private keys
-- **Pseudonymous**: No personal identification required
-- **Instant Claims**: Automated processing via smart contracts
-- **Global Access**: Works anywhere with internet access
-
-### Admin Functions (MVP)
-
-- **Dispute Resolution**: Manual review of complex claims
-- **Record Validation**: Verification of medical documentation
-- **System Monitoring**: Oversight of smart contract operations
-
----
-
-## Global Impact
-
-- **Universal Access** to medical records without borders
-- **Financial Inclusion** through trustless micro-insurance
-- **Hispanic Community Empowerment** (500M+ speakers)
-- **Sustainable Infrastructure** by decentralizing storage
-- **Fraud Reduction** through blockchain and soulbound tokens
-
----
-
-## Development Phases
-
-- ✅ **Planning**: Architecture, tech stack, MVP scope
-- 🔜 **Phase 1**: Core infrastructure, wallet, authentication
-- 🔜 **Phase 2**: Health data management, medical passport
-- 🔜 **Phase 3**: Insurance smart contracts, claims system
-- 🔜 **Phase 4**: Frontend UI/UX, responsive design
-- 🔜 **Phase 5**: Integration, testing, optimization
-- 🔜 **Phase 6**: Deployment, launch, user feedback
-
----
-
-## Contributing
-
-AlmaGlobal is an open project.  
-Pull requests, issues, and proposals are welcome.
-
----
-
-## Documentation
-
-- [Development TODO](./docs/TODO.md) - Detailed development roadmap
-- [API Documentation](./docs/API.md) - Coming soon
-- [Smart Contract Docs](./docs/contracts.md) - Coming soon
-- [User Guide](./docs/user-guide.md) - Coming soon
-
----
+- **Hosting**: Vercel for frontend deployment
+- **Blockchain**: LISC L2 mainnet deployment
+- **Storage**: IPFS pinning services for decentralized storage
+- **CDN**: Global content delivery network
+- **Monitoring**: Uptime monitoring and performance analytics
 
 ## License
 
-MIT
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
