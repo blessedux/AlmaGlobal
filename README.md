@@ -69,15 +69,15 @@ The MVP focuses on building a functional UI/frontend that demonstrates the core 
 
 ### Development
 
-- **LISC L2**: Native integration with LISC Layer 2 network
-- **Smart Contracts**: Deployed on LISC L2 for optimal performance
+- **LISK L2**: Native integration with LISK Layer 2 network
+- **Smart Contracts**: Deployed on LISK L2 for optimal performance
 - **Testing**: Comprehensive testing suite with Foundry
 - **Monitoring**: Real-time blockchain monitoring and analytics
 
 ### Deployment & Infrastructure
 
 - **Hosting**: Vercel for frontend deployment
-- **Blockchain**: LISC L2 mainnet deployment
+- **Blockchain**: LISK L2 mainnet deployment
 - **Storage**: IPFS pinning services for decentralized storage
 - **CDN**: Global content delivery network
 - **Monitoring**: Uptime monitoring and performance analytics
